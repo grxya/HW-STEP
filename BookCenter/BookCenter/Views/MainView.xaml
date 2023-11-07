@@ -40,8 +40,7 @@
             </StackPanel>
         </Grid>
 
-        <!--ContentControl - элемент, который отвечает за привязку 
-            изменяемого контента к окну. -->
+
         <ContentControl Grid.Row="1"
                         Content="{Binding CurrentView, UpdateSourceTrigger=PropertyChanged}"/>
     </Grid>
