@@ -1,0 +1,21 @@
+﻿<Window x:Class="ToDoList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoList"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300" Background="DarkRed">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.7*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Name="ToDo" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="50" FontStyle="Italic" Background="Gainsboro" Width="150" Height="70">To Do</Label>
+        <Button Click="AddButton_Click" Name="AddButton" Grid.Row="1" Content="Add" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent" FontSize="30" Width="200" Height="50" />
+        <ListBox Name ="TasksListBox" Grid.Row="2" BorderBrush="Black" Margin="20 20 20 20" Background="Gainsboro" MouseDoubleClick="TasksListBox_MouseDoubleClick"/>
+    </Grid>
+</Window>

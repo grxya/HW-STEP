@@ -1,0 +1,50 @@
+﻿<Window x:Class="ToDoList.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoList"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="450" Width="400" Background="DarkRed">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.7*" />
+            <RowDefinition  />
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Name="Task" Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="50" FontStyle="Italic" Background="Gainsboro" Width="250" Height="70">Task</Label>
+        <Label Name="Done" Grid.Row="0" Grid.Column="1"  VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="14" FontStyle="Italic" Width="45" Height="25"  Background="Gainsboro">Done:</Label>
+        <CheckBox Name="StatusCheckBox" Grid.Row="0" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.7*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="25"  Background="Gainsboro">Name</Label>
+            <Label Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="25"  Background="Gainsboro">Due</Label>
+            <Label Grid.Row="2" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="25"  Background="Gainsboro">Description</Label>
+
+            <TextBox Name="NameTextBox" Grid.Row="0" Grid.Column="1" FontSize="18" />
+            <DatePicker Name="DueDatePicker" Grid.Row="1" Grid.Column="1" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedDateFormat="Short" />
+            <TextBox Name="DescriptionTextBox" Grid.Row="2" Grid.Column="1" FontSize="18" />
+
+        </Grid>
+        <Button Click="EditButton_Click" Name="EditButton" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Content="Edit" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent" FontSize="30" Width="200" Height="50" />
+    </Grid>
+</Window>

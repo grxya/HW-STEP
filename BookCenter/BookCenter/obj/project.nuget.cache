@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kEMKCd6ciMFvDZ2SpQJkyIGiXpyPamUQ190v9wLACSp6WNUy82WISDcQHFrGrPPFyiwx4dhU8+1V0v0qK3WrXw==",
+  "dgSpecHash": "9ySQBHQDsj6gqkkC2JT1D1FP7e9GncI14Ncn2LMKEci7sFztTwvYHIM+Bt8/Xeodbqjt2k/RIJcdOnVGHjcDig==",
   "success": true,
-  "projectFilePath": "D:\\WinForms\\BookCenter\\BookCenter\\BookCenter.csproj",
+  "projectFilePath": "D:\\HW\\BookCenter\\BookCenter\\BookCenter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",

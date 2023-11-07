@@ -476,11 +476,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WinForms\\BookCenter\\BookCenter\\BookCenter.csproj",
+      "projectUniqueName": "D:\\HW\\BookCenter\\BookCenter\\BookCenter.csproj",
       "projectName": "BookCenter",
-      "projectPath": "D:\\WinForms\\BookCenter\\BookCenter\\BookCenter.csproj",
+      "projectPath": "D:\\HW\\BookCenter\\BookCenter\\BookCenter.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\WinForms\\BookCenter\\BookCenter\\obj\\",
+      "outputPath": "D:\\HW\\BookCenter\\BookCenter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

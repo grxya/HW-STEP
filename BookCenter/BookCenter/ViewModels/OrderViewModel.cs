@@ -44,7 +44,7 @@ class OrderViewModel : ViewModelBase
             {
                 if (InputCheckService.CheckAll(CurrentCard))
                 {
-                    MessageBox.Show("Sucessfull payment!");
+                    MessageBox.Show("Successfull payment!");
                     _navigationService.NavigateTo<InfoViewModel>();
                     CurrentCard = new();
                 }
