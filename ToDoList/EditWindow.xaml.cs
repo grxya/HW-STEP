@@ -48,5 +48,12 @@ namespace ToDoList
                 MessageBox.Show("Invalid date input!");
             }
         }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            App.tasks.Remove(MainWindow.SelectedTask);
+
+            this.Close();
+        }
     }
 }

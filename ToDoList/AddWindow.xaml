@@ -15,7 +15,7 @@
 
         </Grid.RowDefinitions>
 
-        <Label Name="NewTask" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="50" FontStyle="Italic" Background="Gainsboro" Width="250" Height="70" >New Task</Label>
+        <Label Name="NewTask" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="50" FontStyle="Italic" Background="Gainsboro" Width="250" Height="70">New Task</Label>
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -29,9 +29,9 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="25"  Background="Gainsboro" >Name</Label>
-            <Label Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="25"  Background="Gainsboro" >Due</Label>
-            <Label Grid.Row="2" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="25"  Background="Gainsboro" >Description</Label>
+            <Label Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="25"  Background="Gainsboro">Name</Label>
+            <Label Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="25"  Background="Gainsboro">Due</Label>
+            <Label Grid.Row="2" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="25"  Background="Gainsboro">Description</Label>
 
             <TextBox Name="NameTextBox" Grid.Row="0" Grid.Column="1" FontSize="18" />
             <DatePicker Name="DueDatePicker" Grid.Row="1" Grid.Column="1" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedDateFormat="Short" />

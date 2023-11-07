@@ -15,14 +15,15 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition/>
+            <ColumnDefinition Width="0.3*"/>
             <ColumnDefinition Width="0.2*"/>
-            <ColumnDefinition Width="0.1*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Name="Task" Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="50" FontStyle="Italic" Background="Gainsboro" Width="250" Height="70">Task</Label>
-        <Label Name="Done" Grid.Row="0" Grid.Column="1"  VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="14" FontStyle="Italic" Width="45" Height="25"  Background="Gainsboro">Done:</Label>
-        <CheckBox Name="StatusCheckBox" Grid.Row="0" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="Task" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="50" FontStyle="Italic" Background="Gainsboro" Width="250" Height="70">Task</Label>
+        <Label Name="Done" Grid.Row="0" Grid.Column="2"  VerticalContentAlignment="Center" BorderBrush="Transparent" FontSize="14" FontStyle="Italic" Width="45" Height="27"  Background="Gainsboro">Done:</Label>
+        <CheckBox Name="StatusCheckBox" Grid.Row="0" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
         <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
@@ -45,6 +46,8 @@
             <TextBox Name="DescriptionTextBox" Grid.Row="2" Grid.Column="1" FontSize="18" />
 
         </Grid>
-        <Button Click="EditButton_Click" Name="EditButton" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Content="Edit" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent" FontSize="30" Width="200" Height="50" />
+        <Button Click="EditButton_Click" Name="EditButton" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Transparent" FontSize="30" Width="130" Height="50" Margin="20 0 0 0" />
+        <Button Click="DeleteButton_Click" Name="DeleteButton" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="Delete" HorizontalAlignment="Right" VerticalAlignment="Center" BorderBrush="Transparent" FontSize="30" Width="130" Height="50" />
+
     </Grid>
 </Window>
