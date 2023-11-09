@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace BookCenter.Views
 {
-    /// <summary>
-    /// Interaction logic for OrderView.xaml
-    /// </summary>
     public partial class OrderView : UserControl
     {
         public OrderView()
