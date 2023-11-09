@@ -1,0 +1,144 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons\metro5.jpg" />
+    <None Remove="icons\metroAlarms.jpg" />
+    <None Remove="icons\metroAmazon.jpg" />
+    <None Remove="icons\metroBuild.jpg" />
+    <None Remove="icons\metroC.jpg" />
+    <None Remove="icons\metroCalculator.jpg" />
+    <None Remove="icons\metroControlPanel.jpg" />
+    <None Remove="icons\metroD.jpg" />
+    <None Remove="icons\metroDesktop.jpg" />
+    <None Remove="icons\metroDocuments.jpg" />
+    <None Remove="icons\metroExcel.jpg" />
+    <None Remove="icons\metroExplorer.jpg" />
+    <None Remove="icons\metroLabyrinth.jpg" />
+    <None Remove="icons\metroMopod.jpg" />
+    <None Remove="icons\metroMyComputer.jpg" />
+    <None Remove="icons\metroNearMe.jpg" />
+    <None Remove="icons\metroNews.jpg" />
+    <None Remove="icons\metroPaintPlay.jpg" />
+    <None Remove="icons\metroPeople.jpg" />
+    <None Remove="icons\metroPiano.jpg" />
+    <None Remove="icons\metroPicstream.jpg" />
+    <None Remove="icons\metroPowerPoint.jpg" />
+    <None Remove="icons\metroPuzzle.jpg" />
+    <None Remove="icons\metroSocial.jpg" />
+    <None Remove="icons\metroStore.jpg" />
+    <None Remove="icons\metroTreeHouse.jpg" />
+    <None Remove="icons\metroTubeRider.jpg" />
+    <None Remove="icons\metroTwitter.jpg" />
+    <None Remove="icons\metroVideoPlayer.jpg" />
+    <None Remove="icons\metroWeather.jpg" />
+    <None Remove="icons\metroWord.jpg" />
+    <None Remove="icons\metroZeroGravity.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icons\metro5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroAlarms.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroAmazon.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroBuild.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroC.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroCalculator.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroControlPanel.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroD.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroDesktop.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroDocuments.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroExcel.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroExplorer.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroLabyrinth.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroMopod.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroMyComputer.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroNearMe.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroNews.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroPaintPlay.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroPeople.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroPiano.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroPicstream.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroPowerPoint.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroPuzzle.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroSocial.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroStore.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroTreeHouse.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroTubeRider.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroTwitter.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroVideoPlayer.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroWeather.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroWord.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\metroZeroGravity.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
