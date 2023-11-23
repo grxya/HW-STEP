@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Monefy\obj\Debug\net6.0-windows\
+D:\FinalProject\Monefy\obj\Debug\net6.0-windows\
 Monefy
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\Monefy\App.xaml
-7573959945
+D:\FinalProject\Monefy\App.xaml
+10-1458664876
 
-30-2126982186
+451626268027
 2011635360576
-Views\BalanceView.xaml;Views\CalculatorView.xaml;Views\ExpenseCategoryChoiceView.xaml;Views\HomeView.xaml;Views\IncomeCategoryChoiceView.xaml;Views\MainView.xaml;Views\NewTransferView.xaml;
+Views\AddAccountView.xaml;Views\BalanceView.xaml;Views\CalculatorView.xaml;Views\CategoryEditView.xaml;Views\ExpenseCategoryChoiceView.xaml;Views\HomeView.xaml;Views\IncomeCategoryChoiceView.xaml;Views\MainView.xaml;Views\NewTransferView.xaml;Views\TransferCalculatorView.xaml;
 
 False
 

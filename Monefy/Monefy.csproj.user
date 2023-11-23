@@ -7,10 +7,16 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\AddAccountView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\BalanceView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\CalculatorView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CategoryEditView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\ExpenseCategoryChoiceView.xaml.cs">
@@ -28,12 +34,21 @@
     <Compile Update="Views\NewTransferView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\TransferCalculatorView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\AddAccountView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\BalanceView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\CalculatorView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CategoryEditView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ExpenseCategoryChoiceView.xaml">
@@ -49,6 +64,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\NewTransferView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TransferCalculatorView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

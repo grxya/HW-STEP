@@ -7,6 +7,7 @@
              xmlns:local="clr-namespace:Monefy.Views"
              mc:Ignorable="d" 
              d:DesignHeight="750" d:DesignWidth="350">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.08*"/>
@@ -37,7 +38,9 @@
             </Label>
         </DockPanel>
 
-        <ListBox Grid.Row="1" ItemsSource="{Binding Transactions, UpdateSourceTrigger=PropertyChanged}"/>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Transactions, UpdateSourceTrigger=PropertyChanged}">
+
+        </ListBox>
 
     </Grid>
 </UserControl>

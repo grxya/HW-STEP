@@ -26,14 +26,20 @@ namespace Monefy
             Container.RegisterSingleton<IDataService, DataService>();
             Container.RegisterSingleton<ISerializeService, SerializeService>();
             Container.RegisterSingleton<ITransactionService, TransactionService>();
+            Container.RegisterSingleton<ITransferService, TransferService>();
+            Container.RegisterSingleton<IAccountsService, AccountService>();
+            Container.RegisterSingleton<ICategoryService, CategoryService>();
 
             Container.RegisterSingleton<MainViewModel>();
             Container.RegisterSingleton<HomeViewModel>();
             Container.RegisterSingleton<BalanceViewModel>();
             Container.RegisterSingleton<NewTransferViewModel>();
             Container.RegisterSingleton<CalculatorViewModel>();
+            Container.RegisterSingleton<TransferCalculatorViewModel>();
             Container.RegisterSingleton<ExpenseCategoryChoiceViewModel>();
             Container.RegisterSingleton<IncomeCategoryChoiceViewModel>();
+            Container.RegisterSingleton<CategoryEditViewModel>();
+            Container.RegisterSingleton<AddAccountViewModel>();
 
             Container.Verify();
         }

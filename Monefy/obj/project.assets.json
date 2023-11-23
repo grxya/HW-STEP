@@ -546,11 +546,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Monefy\\Monefy.csproj",
+      "projectUniqueName": "D:\\FinalProject\\Monefy\\Monefy.csproj",
       "projectName": "Monefy",
-      "projectPath": "D:\\Monefy\\Monefy.csproj",
+      "projectPath": "D:\\FinalProject\\Monefy\\Monefy.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Monefy\\obj\\",
+      "outputPath": "D:\\FinalProject\\Monefy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

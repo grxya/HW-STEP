@@ -13,6 +13,10 @@ using System.Text;
 using System.Threading.Tasks;
 using static Monefy.Services.Classes.ArithmeticOperationsService;
 using System.Windows.Controls;
+using System.Windows;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Collections.ObjectModel;
 
 namespace Monefy.ViewModels
 {
@@ -22,26 +26,21 @@ namespace Monefy.ViewModels
         private readonly IMessenger _messenger;
         private readonly IDataService _dataService;
         private readonly ITransactionService _transactionService;
+        private readonly IAccountsService _accountsService;
+
         public string OperationType { get; set; }
-
         public TransactionModel CurrentModel { get; set; }
+        public ObservableCollection<AccountModel> Accounts { get; set; }
+        public AccountModel SelectedAccount { get; set; }
 
-        public string view = "0";
-        public string View
-        {
-            get => view;
-            set
-            {
-                Set(ref view, value);
-            }
-        }
-
-        public CalculatorViewModel(INavigationService navigationService, IMessenger messenger, IDataService dataService, ITransactionService transactionService)
+        public CalculatorViewModel(INavigationService navigationService, IMessenger messenger, IDataService dataService, ITransactionService transactionService, IAccountsService accountsService)
         {
             _navigationService = navigationService;
             _messenger = messenger;
             _dataService = dataService;
             _transactionService = transactionService;
+            _accountsService = accountsService;
+            Accounts = _accountsService.Accounts;
 
             _messenger.Register<DataMessage>(this, message =>
             {
@@ -50,8 +49,7 @@ namespace Monefy.ViewModels
                     CurrentModel = message.Data as TransactionModel;
                 }
 
-                if (CurrentModel == null) { OperationType = "New transfer"; }
-                else if (CurrentModel.type == TransactionType.Expense) { OperationType = "New expense"; }
+                if (CurrentModel.type == TransactionType.Expense) { OperationType = "New expense"; }
                 else { OperationType = "New income"; }
             });
         }
@@ -61,14 +59,7 @@ namespace Monefy.ViewModels
             get => new(
             () =>
             {
-                if (CurrentModel == null)
-                {
-                    _navigationService.NavigateTo<NewTransferViewModel>();
-                }
-                else
-                {
-                    _navigationService.NavigateTo<HomeViewModel>();
-                }
+                _navigationService.NavigateTo<HomeViewModel>();
             });
         }
 
@@ -77,33 +68,34 @@ namespace Monefy.ViewModels
             get => new(
             () =>
             {
-                if(CurrentModel == null)
+                if (SelectedAccount != null)
                 {
-                    _navigationService.NavigateTo<HomeViewModel>();
-                }
-                else if (CurrentModel.Category == null)
-                {
-                    _dataService.SendData(CurrentModel);
-
-                    if (CurrentModel.type == TransactionType.Expense)
+                    if (CurrentModel.CategoryID == -1)
                     {
-                        _navigationService.NavigateTo<ExpenseCategoryChoiceViewModel>();
+                        _dataService.SendData(CurrentModel);
+                        _dataService.SendData(SelectedAccount, "AccountToken");
+
+                        if (CurrentModel.type == TransactionType.Expense)
+                        {
+                            _navigationService.NavigateTo<ExpenseCategoryChoiceViewModel>();
+                        }
+                        else
+                        {
+                            _navigationService.NavigateTo<IncomeCategoryChoiceViewModel>();
+                        }
                     }
                     else
                     {
-                        _navigationService.NavigateTo<IncomeCategoryChoiceViewModel>();
+                        SelectedAccount.Balance -= Convert.ToDouble(CurrentModel.Value); _accountsService.Update();
+                        _transactionService.Add(CurrentModel);
+                        _navigationService.NavigateTo<HomeViewModel>();
                     }
                 }
                 else
                 {
-                    _transactionService.Add(CurrentModel);
-                    _navigationService.NavigateTo<HomeViewModel>();
+                    MessageBox.Show("You have to choose an account");
                 }
-            }/*,
-            () =>
-            {
-                return Convert.ToDouble(View) > 0;
-            }*/);
+            });
         }
 
         //////////////////////////////////////////////////////
@@ -112,6 +104,7 @@ namespace Monefy.ViewModels
 
         private double num1 = 0;
         private double num2 = 0;
+        private bool doublecheck = false;
         private bool checkOperation = false;
         private bool checkEqual = false;
         public string _result;
@@ -121,16 +114,16 @@ namespace Monefy.ViewModels
             get => new(
             Number =>
             {
-                if (CurrentModel.Value == "0" || checkOperation == true || checkEqual == true)
+                if (CurrentModel.Value == "0" || doublecheck == true || checkEqual == true)
                 {
                     CurrentModel.Value = Number;
                     checkEqual = false;
+                    doublecheck = false;
                 }
                 else
                 {
                     CurrentModel.Value += Number;
                 }
-                View = CurrentModel.Value;
             });
         }
 
@@ -139,8 +132,26 @@ namespace Monefy.ViewModels
             get => new(
             () =>
             {
-                CurrentModel.Value += '.';
-                View = CurrentModel.Value;
+                if (!CurrentModel.Value.Contains('.'))
+                {
+                    CurrentModel.Value += '.';
+                }
+            });
+        }
+
+        public RelayCommand BackspaceClickCommand
+        {
+            get => new(
+            () =>
+            {
+                if (!string.IsNullOrEmpty(CurrentModel.Value) && CurrentModel.Value.Length > 1)
+                {
+                    CurrentModel.Value = CurrentModel.Value.Substring(0, CurrentModel.Value.Length - 1);
+                }
+                else if (CurrentModel.Value.Length == 1)
+                {
+                    CurrentModel.Value = "0";
+                }
             });
         }
 
@@ -152,11 +163,10 @@ namespace Monefy.ViewModels
                 if (checkOperation)
                 {
                     CurrentModel.Value = operation(num1, Convert.ToDouble(CurrentModel.Value)).ToString();
-                    View = CurrentModel.Value;
                 }
 
                 num1 = Convert.ToDouble(CurrentModel.Value);
-                checkOperation = true;
+                checkOperation = true; doublecheck = true;
 
                 switch(Operation)
                 {
@@ -205,8 +215,6 @@ namespace Monefy.ViewModels
                     CurrentModel.Value = _result;
                     num1 = Convert.ToDouble(_result);
                 }
-
-                View = CurrentModel.Value;
 
                 checkOperation = false;
                 checkEqual = true;

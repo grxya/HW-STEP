@@ -27,8 +27,20 @@
                 <views:IncomeCategoryChoiceView />
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModels:CategoryEditViewModel}">
+                <views:CategoryEditView/>
+            </DataTemplate>
+
             <DataTemplate DataType="{x:Type viewModels:BalanceViewModel}">
                 <views:BalanceView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:TransferCalculatorViewModel}">
+                <views:TransferCalculatorView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:AddAccountViewModel}">
+                <views:AddAccountView />
             </DataTemplate>
 
             <ResourceDictionary.MergedDictionaries>

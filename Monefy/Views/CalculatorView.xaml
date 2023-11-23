@@ -10,8 +10,8 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.56*"/>
-            <RowDefinition Height="0.56*"/>
-            <RowDefinition Height="1.7*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition/>
             <RowDefinition Height="1.3*"/>
             <RowDefinition/>
             <RowDefinition/>
@@ -48,10 +48,10 @@
                 Content="{Binding OperationType, UpdateSourceTrigger=PropertyChanged}"/>
         </DockPanel>
 
-        <DatePicker Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" BorderBrush="MediumSpringGreen" 
-                    SelectedDate="{Binding CurrentModel.Date, UpdateSourceTrigger=PropertyChanged}">
+        <DatePicker Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" BorderBrush="MediumSpringGreen" HorizontalContentAlignment="Center"
+                    FontSize="16" SelectedDate="{Binding CurrentModel.Date, UpdateSourceTrigger=PropertyChanged}">
             <DatePicker.CalendarStyle>
-                <Style TargetType="Calendar"  BasedOn="{StaticResource MaterialDesignCalendarPortraitForeground}">
+                <Style TargetType="Calendar" BasedOn="{StaticResource MaterialDesignCalendarPortraitForeground}">
                     <Style.Resources>
                         <SolidColorBrush x:Key="PrimaryBrush" Color="MediumSpringGreen"/>
                     </Style.Resources>
@@ -59,13 +59,43 @@
             </DatePicker.CalendarStyle>
         </DatePicker>
 
-        <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Margin="10 30 10 10"
+        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Orientation="Horizontal" Background="MediumSpringGreen" Margin="10">
+            <ComboBox Width="50" Margin="10 0 0 0"
+                      ItemsSource="{Binding Accounts}" SelectedItem="{Binding SelectedAccount}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Label>
+                                <md:PackIcon
+                                    Foreground="Black"
+                                    Height="30"
+                                    Width="20"
+                                    Kind="{Binding Icon}"/>
+                            </Label>
+                            <Label Content="{Binding Name}" VerticalContentAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Label Margin="10 0 10 0" Width="180"
                  md:TextFieldAssist.UnderlineBrush="AliceBlue"
                  md:TextFieldAssist.HasOutlinedTextField="True"
                  VerticalAlignment="Center" HorizontalContentAlignment="Right"
-                 Content="{Binding View}"
+                 Content="{Binding CurrentModel.Value, UpdateSourceTrigger=PropertyChanged}"
                  FontSize="20">
-        </Label>
+            </Label>
+            <Button Grid.Row="4" Grid.Column="1" 
+                Width="55" Height="50" Margin="5 5 5 5" Foreground="Black"
+                Background="Transparent" BorderBrush="MediumSpringGreen"
+                Style="{DynamicResource MaterialDesignFlatAccentBgButton}"
+                Command="{Binding BackspaceClickCommand}" CommandParameter="2">
+                <md:PackIcon 
+                    Foreground="Black"
+                    Height="30"
+                    Width="20"
+                    Kind="BackspaceOutline"/>
+            </Button>
+        </StackPanel>
 
         <TextBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Margin="10"
                  VerticalAlignment="Center"

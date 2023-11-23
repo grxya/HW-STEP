@@ -13,7 +13,7 @@ namespace Monefy.Services.Classes
     public class TransactionService : ITransactionService
     {
         private readonly ISerializeService _serializeService;
-        private const string _filepath = "example.json"; //!!!!!
+        private const string _filepath = "Transactions.json";
 
         public ObservableCollection<TransactionModel> Transactions { get; set; }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dLyYEjSYncar/gzgvoORLzf4zctJVqMb4fJQfqxHM0yVu0+fsKyuX48MZ0GdwlpWJOWVbe4kU5ZwYb7P7M1YLg==",
+  "dgSpecHash": "Rn0URx6lKq5SDXg27oB7LjqYrgKVPZvxeZQFvt/kYmmenlIZG6DFfMFbqBWinZugxnvRp7iSTR8URnNaiPg4dw==",
   "success": true,
-  "projectFilePath": "D:\\Monefy\\Monefy.csproj",
+  "projectFilePath": "D:\\FinalProject\\Monefy\\Monefy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",

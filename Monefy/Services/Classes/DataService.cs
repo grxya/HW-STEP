@@ -19,10 +19,19 @@ namespace Monefy.Services.Classes
             _messenger = messenger;
         }
 
+
         public void SendData<T>(T? data) where T : IData
         {
             if (data != null)
                 _messenger.Send(new DataMessage() { Data = data });
+            else
+                throw new NullReferenceException("Data is null");
+        }
+
+        public void SendData<T>(T? data, string Token) where T : IData
+        {
+            if (data != null)
+                _messenger.Send(new DataMessage() { Data = data }, Token);
             else
                 throw new NullReferenceException("Data is null");
         }

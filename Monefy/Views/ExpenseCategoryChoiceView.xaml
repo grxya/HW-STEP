@@ -45,9 +45,14 @@
             </Label>
         </DockPanel>
 
-        <DatePicker Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" SelectedDate="{Binding CurrentModel.Date}"/>
+        <DatePicker Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" 
+                    BorderBrush="MediumSpringGreen" HorizontalContentAlignment="Center" FontSize="16" 
+                    SelectedDate="{Binding CurrentModel.Date}"/>
 
         <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Margin="10 30 10 10"
+               Height="60"
+               Background="MediumSpringGreen"
+               VerticalContentAlignment="Center"
                  md:TextFieldAssist.UnderlineBrush="AliceBlue"
                  md:TextFieldAssist.HasOutlinedTextField="True"
                  VerticalAlignment="Center" HorizontalContentAlignment="Right"
@@ -76,138 +81,137 @@
             <Button Grid.Row="0" Grid.Column="0"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Toiletry"                   
+                CommandParameter="0"                   
                 Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="DarkBlue"
+                    Foreground="{Binding Colors[0]}"
                     Height="30"
                     Width="50"
-                    Kind="ToothbrushPaste"/>
+                    Kind="{Binding Categories[0].Icon}"/>
             </Button>
             <Button Grid.Row="0" Grid.Column="1" 
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Food"
+                CommandParameter="1"
                 Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="HotPink"
+                    Foreground="{Binding Colors[1]}"
                     Height="30"
                     Width="50"
-                    Kind="ShoppingBasket"/>
+                    Kind="{Binding Categories[1].Icon}"/>
             </Button>
             <Button Grid.Row="0" Grid.Column="2" 
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="House"    
+                CommandParameter="2"    
                 Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="LightBlue"
+                    Foreground="{Binding Colors[2]}"
                     Height="30"
                     Width="50"
-                    Kind="HomeOutline"/>
+                    Kind="{Binding Categories[2].Icon}"/>
             </Button>
             <Button Grid.Row="0" Grid.Column="3"
                     Width="85" Height="85"
                     Command="{Binding CategoryClickCommand}" 
-                    CommandParameter="Car"    
+                    CommandParameter="3"    
                     Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="MediumPurple"
+                    Foreground="{Binding Colors[3]}"
                     Height="30"
                     Width="50"
-                    Kind="CarOutline"/>
+                    Kind="{Binding Categories[3].Icon}"/>
             </Button>
 
             <Button Grid.Row="1" Grid.Column="0"
                     Width="85" Height="85"
                     Command="{Binding CategoryClickCommand}" 
-                    CommandParameter="EatingOut"    
+                    CommandParameter="4"    
                     Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="LightGreen"
+                    Foreground="{Binding Colors[4]}"
                     Height="30"
                     Width="50"
-                    Kind="CutleryForkKnife"/>
+                    Kind="{Binding Categories[4].Icon}"/>
             </Button>
             <Button Grid.Row="1" Grid.Column="1"
                     Width="85" Height="85"
                     Command="{Binding CategoryClickCommand}" 
-                    CommandParameter="Clothes"
+                    CommandParameter="5"
                     Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="Purple"
+                    Foreground="{Binding Colors[5]}"
                     Height="30"
                     Width="50"
-                    Kind="TshirtCrewOutline"/>
+                    Kind="{Binding Categories[5].Icon}"/>
             </Button>
 
             <Button Grid.Row="1" Grid.Column="2"
                 Width="85" Height="85"
                     Command="{Binding CategoryClickCommand}" 
-                    CommandParameter="Transport"
+                    CommandParameter="6"
                     Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="YellowGreen"
-                    
+                    Foreground="{Binding Colors[6]}"
                     Height="30"
                     Width="50"
-                    Kind="Train"/>
+                    Kind="{Binding Categories[6].Icon}"/>
             </Button>
             <Button Grid.Row="1" Grid.Column="3"
                     Width="85" Height="85"
                     Command="{Binding CategoryClickCommand}" 
-                    CommandParameter="Communications"
+                    CommandParameter="7"
                     Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="DeepSkyBlue"
+                    Foreground="{Binding Colors[7]}"
                     Height="30"
                     Width="50"
-                    Kind="PhoneOutline"/>
+                    Kind="{Binding Categories[7].Icon}"/>
             </Button>
 
             <Button Grid.Row="2" Grid.Column="0"
                     Width="85" Height="85"
                     Command="{Binding CategoryClickCommand}" 
-                    CommandParameter="Entertainment"
+                    CommandParameter="8"
                     Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="Goldenrod"
+                    Foreground="{Binding Colors[8]}"
                     Height="30"
                     Width="50"
-                    Kind="GlassCocktail"/>
+                    Kind="{Binding Categories[8].Icon}"/>
             </Button>
             <Button Grid.Row="2" Grid.Column="1"
                     Width="85" Height="85"
                     Command="{Binding CategoryClickCommand}" 
-                    CommandParameter="Sports"
+                    CommandParameter="9"
                     Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="DarkCyan"
+                    Foreground="{Binding Colors[9]}"
                     Height="30"
                     Width="50"
-                    Kind="Football"/>
+                    Kind="{Binding Categories[9].Icon}"/>
             </Button>
             <Button Grid.Row="2" Grid.Column="2"
                     Width="85" Height="85"
                     Command="{Binding CategoryClickCommand}" 
-                    CommandParameter="Taxi"
+                    CommandParameter="10"
                     Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="DarkGoldenrod"
+                    Foreground="{Binding Colors[10]}"
                     Height="30"
                     Width="50"
-                    Kind="Taxi"/>
+                    Kind="{Binding Categories[10].Icon}"/>
             </Button>
             <Button Grid.Row="2" Grid.Column="3"
                     Width="85" Height="85"
                     Command="{Binding CategoryClickCommand}" 
-                    CommandParameter="Health"
+                    CommandParameter="11"
                     Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
-                    Foreground="Red"
+                    Foreground="{Binding Colors[11]}"
                     Height="30"
                     Width="50"
-                    Kind="PillBottleOutline"/>
+                    Kind="{Binding Categories[11].Icon}"/>
             </Button>
         </Grid>
     </Grid>

@@ -7,7 +7,37 @@
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              xmlns:local="clr-namespace:Monefy.Views"
              mc:Ignorable="d" 
+             Name="Home"
              d:DesignHeight="750" d:DesignWidth="350">
+
+    <UserControl.Resources>
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="DateFilterGrid">
+                <EasingDoubleKeyFrame KeyTime="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="400"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="DateFilterGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="400"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Key="OpenSettings">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="SettingsGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="280"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="CloseSettings">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="SettingsGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="280"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*"/>
@@ -29,6 +59,7 @@
 
         <DockPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="MediumSpringGreen">
             <Button 
+                Click="FilterMenu_Click"
                 DockPanel.Dock="Left" 
                 Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
@@ -49,6 +80,7 @@
             </Label>
 
             <Button 
+                Click="SettingsMenu_Click"
                 DockPanel.Dock="Right" 
                 Style="{DynamicResource MaterialDesignFlatButton }">
                 <md:PackIcon 
@@ -78,74 +110,101 @@
             </Button>
         </DockPanel>
 
-        <DockPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
+            <Button Width="50"           
+                Command="{Binding PreviousCommand}"
+                Style="{DynamicResource MaterialDesignFlatButton }">
+                <md:PackIcon 
+                    Foreground="Green"
+                    Height="15"
+                    Width="20"
+                    Kind="ArrowBack"/>
+            </Button>
+
+            <Label VerticalAlignment="Center" 
+                   HorizontalContentAlignment="Center"
+                   Foreground="Green"
+                   FontSize="18" Width="240"
+                Content="{Binding DateLabel, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Button Width="50"           
+                Command="{Binding NextCommand}"
+                Style="{DynamicResource MaterialDesignFlatButton }">
+                <md:PackIcon 
+                    Foreground="Green"
+                    Height="15"
+                    Width="20"
+                    Kind="ArrowForward"/>
+            </Button>
+        </StackPanel>
 
         <Button Grid.Row="2" Grid.Column="0"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Toiletry"
+                CommandParameter="0"
             Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="DarkBlue"
+                    Foreground="{Binding Colors[0]}"
                     Height="30"
                     Width="50"
-                    Kind="ToothbrushPaste"/>
+                    Kind="{Binding Categories[0].Icon}"/>
         </Button>
         <Button Grid.Row="2" Grid.Column="1" 
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Food"
+                CommandParameter="1"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="HotPink"
+                    Foreground="{Binding Colors[1]}"
                     Height="30"
                     Width="50"
-                    Kind="ShoppingBasket"/>
+                    Kind="{Binding Categories[1].Icon}"/>
         </Button>
         <Button Grid.Row="2" Grid.Column="2" 
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="House"
+                CommandParameter="2"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="LightBlue"
+                    Foreground="{Binding Colors[2]}"
                     Height="30"
                     Width="50"
-                    Kind="HomeOutline"/>
+                    Kind="{Binding Categories[2].Icon}"/>
         </Button>
         <Button Grid.Row="2" Grid.Column="3"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Car"
+                CommandParameter="3"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="MediumPurple"
+                    Foreground="{Binding Colors[3]}"
                     Height="30"
                     Width="50"
-                    Kind="CarOutline"/>
+                    Kind="{Binding Categories[3].Icon}"/>
         </Button>
 
         <Button Grid.Row="3" Grid.Column="0"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="EatingOut"
+                CommandParameter="4"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="LightGreen"
+                    Foreground="{Binding Colors[4]}"
                     Height="30"
                     Width="50"
-                    Kind="CutleryForkKnife"/>
+                    Kind="{Binding Categories[4].Icon}"/>
         </Button>
         <Button Grid.Row="3" Grid.Column="3"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Clothes"
+                CommandParameter="5"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="Purple"
+                    Foreground="{Binding Colors[5]}"
                     Height="30"
                     Width="50"
-                    Kind="TshirtCrewOutline"/>
+                    Kind="{Binding Categories[5].Icon}"/>
         </Button>
 
 
@@ -162,69 +221,69 @@
         <Button Grid.Row="4" Grid.Column="0"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Transport"
+                CommandParameter="6"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="YellowGreen"
+                    Foreground="{Binding Colors[6]}"
                     Height="30"
                     Width="50"
-                    Kind="Train"/>
+                    Kind="{Binding Categories[6].Icon}"/>
         </Button>
         <Button Grid.Row="4" Grid.Column="3"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Communications"
+                CommandParameter="7"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="DeepSkyBlue"
+                    Foreground="{Binding Colors[7]}"
                     Height="30"
                     Width="50"
-                    Kind="PhoneOutline"/>
+                    Kind="{Binding Categories[7].Icon}"/>
         </Button>
 
         <Button Grid.Row="5" Grid.Column="0"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Entertainment"
+                CommandParameter="8"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="Goldenrod"
+                    Foreground="{Binding Colors[8]}"
                     Height="30"
                     Width="50"
-                    Kind="GlassCocktail"/>
+                    Kind="{Binding Categories[8].Icon}"/>
         </Button>
         <Button Grid.Row="5" Grid.Column="1"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Sports"
+                CommandParameter="9"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="DarkCyan"
+                    Foreground="{Binding Colors[9]}"
                     Height="30"
                     Width="50"
-                    Kind="Football"/>
+                    Kind="{Binding Categories[9].Icon}"/>
         </Button>
         <Button Grid.Row="5" Grid.Column="2"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Taxi"
+                CommandParameter="10"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="DarkGoldenrod"
+                    Foreground="{Binding Colors[10]}"
                     Height="30"
                     Width="50"
-                    Kind="Taxi"/>
+                    Kind="{Binding Categories[10].Icon}"/>
         </Button>
         <Button Grid.Row="5" Grid.Column="3"
                 Width="85" Height="85"
                 Command="{Binding CategoryClickCommand}" 
-                CommandParameter="Health"
+                CommandParameter="11"
                 Style="{DynamicResource MaterialDesignFlatButton }">
             <md:PackIcon 
-                    Foreground="Red"
+                    Foreground="{Binding Colors[11]}"
                     Height="30"
                     Width="50"
-                    Kind="PillBottleOutline"/>
+                    Kind="{Binding Categories[11].Icon}"/>
         </Button>
 
         <Button Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"
@@ -267,5 +326,134 @@
                     Width="50"
                     Kind="Plus"/>
         </Button>
+
+
+
+        <!---->
+
+        <Grid 
+            x:Name="DateFilterGrid"
+            Grid.Row="1"
+            Grid.RowSpan="3"
+            HorizontalAlignment="Left"
+            Width="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Grid.RowSpan="4">
+                <Border.Background>
+                    <RadialGradientBrush RadiusX="4" RadiusY="3">
+                        <GradientStop Color="MediumSpringGreen" Offset="0.0" />
+                        <GradientStop Color="#242323" Offset="4.0" />
+                    </RadialGradientBrush>
+                </Border.Background>
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="7" ShadowDepth="5" Direction="270" Color="Black"/>
+                </Border.Effect>
+            </Border>
+
+            <Button Grid.Row="0" Width="75" HorizontalAlignment="Left" Margin="5"
+                    Background="MediumSpringGreen" Foreground="White" BorderBrush="White" BorderThickness="3"
+                    Click="FilterMenu_Click" Command="{Binding ChartModeChangeCommand}" CommandParameter="Day">
+                Day
+            </Button>
+            <Button Grid.Row="1" Width="75" HorizontalAlignment="Left" Margin="5"
+                    Background="MediumSpringGreen" Foreground="White" BorderBrush="White" BorderThickness="3"                    
+                    Click="FilterMenu_Click" Command="{Binding ChartModeChangeCommand}" CommandParameter="Week">
+                Week
+            </Button>
+            <Button Grid.Row="2" Width="75" HorizontalAlignment="Left" Margin="5"
+                    Background="MediumSpringGreen" Foreground="White" BorderBrush="White" BorderThickness="3"                    
+                    Click="FilterMenu_Click" Command="{Binding ChartModeChangeCommand}" CommandParameter="Month">
+                Month
+            </Button>
+            <Button Grid.Row="3" Width="75" HorizontalAlignment="Left" Margin="5"
+                    Background="MediumSpringGreen" Foreground="White" BorderBrush="White" BorderThickness="3"                    
+                    Click="FilterMenu_Click" Command="{Binding ChartModeChangeCommand}" CommandParameter="Year">
+                Year
+            </Button>
+        </Grid>
+
+
+        <Grid 
+            x:Name="SettingsGrid"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Grid.Row="1"
+            Grid.RowSpan="5"
+            VerticalAlignment="Top"
+            Width="520" Height="0"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Grid.RowSpan="5">
+                <Border.Background>
+                    <RadialGradientBrush RadiusX="4" RadiusY="3">
+                        <GradientStop Color="MediumSpringGreen" Offset="0.0" />
+                        <GradientStop Color="#242323" Offset="4.0" />
+                    </RadialGradientBrush>
+                </Border.Background>
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="7" ShadowDepth="5" Direction="330" Color="Black"/>
+                </Border.Effect>
+            </Border>
+
+            <Label Grid.Row="0" FontWeight="Bold" FontSize="12">
+                Categories
+            </Label>
+            <ListBox Grid.Row="1" Width="150" Height="40" HorizontalAlignment="Right" Margin="10"
+                    Background="MediumSpringGreen" Foreground="White" BorderBrush="White" BorderThickness="3"
+                     ItemsSource="{Binding Categories}" SelectedIndex="{Binding SelectedCategory}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Width="10" Height="10" Background="White" Command="{Binding ElementName=Home, Path=DataContext.CategoryEditCommand}"/>
+                            <Label Content="{Binding Name}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <Label Grid.Row="2" FontWeight="Bold" FontSize="12">
+                Accounts
+            </Label>
+            <ListBox Grid.Row="3" Width="150" Height="40" HorizontalAlignment="Right" Margin="10"
+                     Background="MediumSpringGreen" Foreground="White" BorderBrush="White" BorderThickness="3"
+                     ItemsSource="{Binding Accounts}" SelectedIndex="{Binding SelectedCategory}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Width="10" Height="10" Background="White" Command="{Binding ElementName=Home, Path=DataContext.AccountEditCommand}"/>
+                            <Label Content="{Binding Name}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Grid.Row="4" Width="150" HorizontalAlignment="Left" Margin="10"
+                    Background="MediumSpringGreen" Foreground="White" BorderBrush="White" BorderThickness="3"                    
+                    Command="{Binding AddAccountCommand}">
+                Add Account
+            </Button>
+        </Grid>
+        <!---->
     </Grid>
+    
 </UserControl>
