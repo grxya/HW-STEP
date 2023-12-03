@@ -1,0 +1,15 @@
+D:\Patterns\ComputerBuilder\bin\Debug\net6.0\ComputerBuilder.exe
+D:\Patterns\ComputerBuilder\bin\Debug\net6.0\ComputerBuilder.deps.json
+D:\Patterns\ComputerBuilder\bin\Debug\net6.0\ComputerBuilder.runtimeconfig.json
+D:\Patterns\ComputerBuilder\bin\Debug\net6.0\ComputerBuilder.dll
+D:\Patterns\ComputerBuilder\bin\Debug\net6.0\ComputerBuilder.pdb
+D:\Patterns\ComputerBuilder\obj\Debug\net6.0\ComputerBuilder.csproj.AssemblyReference.cache
+D:\Patterns\ComputerBuilder\obj\Debug\net6.0\ComputerBuilder.GeneratedMSBuildEditorConfig.editorconfig
+D:\Patterns\ComputerBuilder\obj\Debug\net6.0\ComputerBuilder.AssemblyInfoInputs.cache
+D:\Patterns\ComputerBuilder\obj\Debug\net6.0\ComputerBuilder.AssemblyInfo.cs
+D:\Patterns\ComputerBuilder\obj\Debug\net6.0\ComputerBuilder.csproj.CoreCompileInputs.cache
+D:\Patterns\ComputerBuilder\obj\Debug\net6.0\ComputerBuilder.dll
+D:\Patterns\ComputerBuilder\obj\Debug\net6.0\refint\ComputerBuilder.dll
+D:\Patterns\ComputerBuilder\obj\Debug\net6.0\ComputerBuilder.pdb
+D:\Patterns\ComputerBuilder\obj\Debug\net6.0\ComputerBuilder.genruntimeconfig.cache
+D:\Patterns\ComputerBuilder\obj\Debug\net6.0\ref\ComputerBuilder.dll
