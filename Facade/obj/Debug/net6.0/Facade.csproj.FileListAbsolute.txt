@@ -1,0 +1,15 @@
+D:\Patterns\Facade\obj\Debug\net6.0\Facade.csproj.AssemblyReference.cache
+D:\Patterns\Facade\obj\Debug\net6.0\Facade.GeneratedMSBuildEditorConfig.editorconfig
+D:\Patterns\Facade\obj\Debug\net6.0\Facade.AssemblyInfoInputs.cache
+D:\Patterns\Facade\obj\Debug\net6.0\Facade.AssemblyInfo.cs
+D:\Patterns\Facade\obj\Debug\net6.0\Facade.csproj.CoreCompileInputs.cache
+D:\Patterns\Facade\bin\Debug\net6.0\Facade.exe
+D:\Patterns\Facade\bin\Debug\net6.0\Facade.deps.json
+D:\Patterns\Facade\bin\Debug\net6.0\Facade.runtimeconfig.json
+D:\Patterns\Facade\bin\Debug\net6.0\Facade.dll
+D:\Patterns\Facade\bin\Debug\net6.0\Facade.pdb
+D:\Patterns\Facade\obj\Debug\net6.0\Facade.dll
+D:\Patterns\Facade\obj\Debug\net6.0\refint\Facade.dll
+D:\Patterns\Facade\obj\Debug\net6.0\Facade.pdb
+D:\Patterns\Facade\obj\Debug\net6.0\Facade.genruntimeconfig.cache
+D:\Patterns\Facade\obj\Debug\net6.0\ref\Facade.dll
