@@ -23,7 +23,7 @@ namespace State.States.Classes
 
         public void Hibernate(Computer computer)
         {
-            Console.WriteLine("Turn on computer to change to Hibernate mode");
+            Console.WriteLine("Turn on computer to switch to Hibernate mode");
         }
 
         public void Sleep(Computer computer)

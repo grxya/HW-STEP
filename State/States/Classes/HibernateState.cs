@@ -28,7 +28,7 @@ namespace State.States.Classes
 
         public void Sleep(Computer computer)
         {
-            Console.WriteLine("Turn on computer to change to Sleep mode");
+            Console.WriteLine("Turn on computer to switch to Sleep mode");
         }
 
         public void PlayGame(Computer computer)

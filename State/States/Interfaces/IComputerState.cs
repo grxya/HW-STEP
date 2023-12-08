@@ -13,6 +13,5 @@ namespace State.States.Interfaces
         public void Hibernate(Computer computer);
         public void Sleep(Computer computer);
         public void PlayGame(Computer computer);
-
     }
 }

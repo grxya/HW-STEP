@@ -22,13 +22,13 @@ namespace State.States.Classes
 
         public void Hibernate(Computer computer)
         {
-            Console.WriteLine("Changing to Hibernate mode");
+            Console.WriteLine("Switching to Hibernate mode");
             computer.State = new HibernateState();
         }
 
         public void Sleep(Computer computer)
         {
-            Console.WriteLine("Changing to Sleep mode");
+            Console.WriteLine("Switching to Sleep mode");
             computer.State = new SleepState();
         }
 
