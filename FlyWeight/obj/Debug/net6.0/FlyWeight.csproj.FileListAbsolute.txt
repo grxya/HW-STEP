@@ -1,0 +1,15 @@
+D:\Patterns\FlyWeight\bin\Debug\net6.0\FlyWeight.exe
+D:\Patterns\FlyWeight\bin\Debug\net6.0\FlyWeight.deps.json
+D:\Patterns\FlyWeight\bin\Debug\net6.0\FlyWeight.runtimeconfig.json
+D:\Patterns\FlyWeight\bin\Debug\net6.0\FlyWeight.dll
+D:\Patterns\FlyWeight\bin\Debug\net6.0\FlyWeight.pdb
+D:\Patterns\FlyWeight\obj\Debug\net6.0\FlyWeight.csproj.AssemblyReference.cache
+D:\Patterns\FlyWeight\obj\Debug\net6.0\FlyWeight.GeneratedMSBuildEditorConfig.editorconfig
+D:\Patterns\FlyWeight\obj\Debug\net6.0\FlyWeight.AssemblyInfoInputs.cache
+D:\Patterns\FlyWeight\obj\Debug\net6.0\FlyWeight.AssemblyInfo.cs
+D:\Patterns\FlyWeight\obj\Debug\net6.0\FlyWeight.csproj.CoreCompileInputs.cache
+D:\Patterns\FlyWeight\obj\Debug\net6.0\FlyWeight.dll
+D:\Patterns\FlyWeight\obj\Debug\net6.0\refint\FlyWeight.dll
+D:\Patterns\FlyWeight\obj\Debug\net6.0\FlyWeight.pdb
+D:\Patterns\FlyWeight\obj\Debug\net6.0\FlyWeight.genruntimeconfig.cache
+D:\Patterns\FlyWeight\obj\Debug\net6.0\ref\FlyWeight.dll
