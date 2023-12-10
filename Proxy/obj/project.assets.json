@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Patterns\\Proxy\\Proxy.csproj",
+      "projectUniqueName": "D:\\HW\\HW-STEP\\Proxy\\Proxy.csproj",
       "projectName": "Proxy",
-      "projectPath": "D:\\Patterns\\Proxy\\Proxy.csproj",
+      "projectPath": "D:\\HW\\HW-STEP\\Proxy\\Proxy.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Patterns\\Proxy\\obj\\",
+      "outputPath": "D:\\HW\\HW-STEP\\Proxy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
