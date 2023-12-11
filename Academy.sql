@@ -36,9 +36,6 @@ insert into Groups(Name, Rating, Year) values(N'602', 4, 3);
 insert into Departments(Financing, Name) values(10000, N'Applied Mathematics')
 insert into Faculties(Name) values(N'IT');
 insert into Teachers(EmploymentDate, Name, Premium, Salary, Surname) values('1993-06-11', N'Irada', 200, 1500, N'Mammadova');
-
---insert into Groups(Name, Rating, Year) values(N'', 6, 1); такой запрос, к примеру, выдаст ошибку и не обработается из-за пустого имени и года вне диапазона
-
 go;
 
 
