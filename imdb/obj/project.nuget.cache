@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/v9m5eHJ+mayyvg/acXhwWZKm8+ch4dcMzkOjCYBddR5Q5Kzdliy5krPeuvfqjqZU+PN4DpJgZcF3B0AA8qSew==",
+  "success": true,
+  "projectFilePath": "D:\\WinForms+WPF\\1\\imdb\\imdb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}
