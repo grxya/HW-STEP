@@ -1,0 +1,68 @@
+﻿<Page x:Class="imdb.Views.InfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:imdb.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="InfoPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Button Name="BackButton" Grid.Row="0" Grid.Column="0" 
+                VerticalAlignment="Center" HorizontalAlignment="Left" 
+                Margin="10" Width="110" Height="35"
+                Click="BackButton_Click">
+            <Button.Content>
+                <StackPanel Orientation="Horizontal">
+                    <Label  VerticalAlignment="Center">
+                        <md:PackIcon
+                            Width="15"
+                            Height="20"
+                            Foreground="White"
+                            Kind="ArrowBack"/>
+                    </Label>
+                    <Label FontSize="12" Foreground="White"
+                           VerticalAlignment="Center">
+                        Go Back
+                    </Label>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+
+        <Label Grid.Row="1" Grid.Column="0" FontWeight="Bold" FontSize="14">Title</Label>
+        <Label Name="Title" Grid.Row="1" Grid.Column="1"/>
+
+        <Label Grid.Row="2" Grid.Column="0" FontWeight="Bold" FontSize="14">Release Date</Label>
+        <Label Name="ReleaseDate" Grid.Row="2" Grid.Column="1"/>
+
+        <Label Grid.Row="3" Grid.Column="0" FontWeight="Bold" FontSize="14">Runtime</Label>
+        <Label Name ="Runtime" Grid.Row="3" Grid.Column="1"/>
+
+        <Label Grid.Row="4" Grid.Column="0" FontWeight="Bold" FontSize="14">Genre</Label>
+        <Label Name="Genre" Grid.Row="4" Grid.Column="1"/>
+
+        <Label Grid.Row="5" Grid.Column="0" FontWeight="Bold" FontSize="14">Language</Label>
+        <Label Name ="Language" Grid.Row="5" Grid.Column="1"/>
+
+        <Image Name="Poster" Grid.Row="0" Grid.Column="2" Grid.RowSpan="6"/>
+    </Grid>
+
+</Page>
