@@ -1,0 +1,14 @@
+D:\Network\HW\bin\Debug\net8.0\HW.exe
+D:\Network\HW\bin\Debug\net8.0\HW.deps.json
+D:\Network\HW\bin\Debug\net8.0\HW.runtimeconfig.json
+D:\Network\HW\bin\Debug\net8.0\HW.dll
+D:\Network\HW\bin\Debug\net8.0\HW.pdb
+D:\Network\HW\obj\Debug\net8.0\HW.GeneratedMSBuildEditorConfig.editorconfig
+D:\Network\HW\obj\Debug\net8.0\HW.AssemblyInfoInputs.cache
+D:\Network\HW\obj\Debug\net8.0\HW.AssemblyInfo.cs
+D:\Network\HW\obj\Debug\net8.0\HW.csproj.CoreCompileInputs.cache
+D:\Network\HW\obj\Debug\net8.0\HW.dll
+D:\Network\HW\obj\Debug\net8.0\refint\HW.dll
+D:\Network\HW\obj\Debug\net8.0\HW.pdb
+D:\Network\HW\obj\Debug\net8.0\HW.genruntimeconfig.cache
+D:\Network\HW\obj\Debug\net8.0\ref\HW.dll
