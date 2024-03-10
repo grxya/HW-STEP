@@ -13,7 +13,7 @@ public class WeatherService : IWeatherService
         var request = new HttpRequestMessage
         {
             Method = HttpMethod.Get,
-            RequestUri = new Uri($"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=2b1fd2d7f77ccf1b7de9b441571b39b8&units=metric"),
+            RequestUri = new Uri($"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=cc6b5569abb76b923d727b3d0e6b693a&units=metric"),
         };
         
         var body = await _downloadService.GetJson(request);
