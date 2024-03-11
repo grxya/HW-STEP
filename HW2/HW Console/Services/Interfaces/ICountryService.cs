@@ -2,7 +2,7 @@ using HW.Models;
 
 namespace HW.Services.Interfaces;
 
-public interface ICountryService
+public interface ICountryService : IService
 {
-    public Task<CountryModel> GetData(string country);
+    public Task<string> GetCurrency(string countryCode);
 }

@@ -1,5 +1,7 @@
 using System.Text.Json;
 using HW.Models;
+using HW.Models.Classes;
+using HW.Models.Interfaces;
 using HW.Services.Interfaces;
 
 namespace HW.Services.Classes;
@@ -8,7 +10,7 @@ public class CountryService : ICountryService
 {
     private readonly IDownloadService _downloadService = new DownloadService();
 
-    public async Task<CountryModel> GetData(string countryCode)
+    public async Task<IModel> GetData(string countryCode)
     {
         var request = new HttpRequestMessage
         {
@@ -24,5 +26,11 @@ public class CountryService : ICountryService
         var body = await _downloadService.GetJson(request);
         
         return JsonSerializer.Deserialize<CountryModel>(body);
+    }
+
+    public async Task<string> GetCurrency(string countryCode)
+    {
+        var data =  await GetData(countryCode) as CountryModel;
+        return data.Currency;
     }
 }

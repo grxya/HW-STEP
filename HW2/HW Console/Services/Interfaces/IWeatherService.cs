@@ -2,7 +2,7 @@ using HW.Models;
 
 namespace HW.Services.Interfaces;
 
-public interface IWeatherService
+public interface IWeatherService : IService
 {
-    public Task<WeatherModel> GetData(string city);
+    public Task<string> GetCountry(string city);
 }

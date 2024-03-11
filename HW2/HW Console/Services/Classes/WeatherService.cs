@@ -1,5 +1,6 @@
 using System.Text.Json;
-using HW.Models;
+using HW.Models.Classes;
+using HW.Models.Interfaces;
 using HW.Services.Interfaces;
 
 namespace HW.Services.Classes;
@@ -8,7 +9,7 @@ public class WeatherService : IWeatherService
 {
     private readonly IDownloadService _downloadService = new DownloadService();
     
-    public async Task<WeatherModel> GetData(string city)
+    public async Task<IModel> GetData(string city)
     {
         var request = new HttpRequestMessage
         {
@@ -19,5 +20,12 @@ public class WeatherService : IWeatherService
         var body = await _downloadService.GetJson(request);
 
         return JsonSerializer.Deserialize<WeatherModel>(body);
+    }
+
+    public async Task<string> GetCountry(string city)
+    {
+        var data =  await GetData(city) as WeatherModel;
+        return data.Sys.Country;
+        
     }
 }

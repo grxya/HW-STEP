@@ -1,8 +1,8 @@
-using HW.Models;
+using HW.Models.Classes;
 
 namespace HW.Services.Interfaces;
 
-public interface ICurrencyService
+public interface ICurrencyService : IService
 {
-    public Task<CurrencyModel> GetData(string baseCurrency);
+    public Task<Rates> GetRates(string baseCurrency);
 }

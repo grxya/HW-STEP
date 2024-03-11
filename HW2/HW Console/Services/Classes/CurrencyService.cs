@@ -1,5 +1,6 @@
 using System.Text.Json;
-using HW.Models;
+using HW.Models.Classes;
+using HW.Models.Interfaces;
 using HW.Services.Interfaces;
 
 namespace HW.Services.Classes;
@@ -8,7 +9,7 @@ public class CurrencyService : ICurrencyService
 {
     private readonly IDownloadService _downloadService = new DownloadService();
     
-    public async Task<CurrencyModel> GetData(string baseCurrency)
+    public async Task<IModel> GetData(string baseCurrency)
     {
         var request = new HttpRequestMessage
         {
@@ -24,5 +25,11 @@ public class CurrencyService : ICurrencyService
         var body = await _downloadService.GetJson(request);
         
         return JsonSerializer.Deserialize<CurrencyModel>(body);
+    }
+
+    public async Task<Rates> GetRates(string baseCurrency)
+    {
+        var data =  await GetData(baseCurrency) as CurrencyModel;
+        return data.Rates;
     }
 }
