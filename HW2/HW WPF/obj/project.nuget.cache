@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "WUc74aP+HLAIWSKuoJ+wVosELWc2Dmp6mxFSVSpdlocLl7HvjRJsO4lXpOlqwgdjpSSyU+hiF5PDWFcWBF+qYA==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\CurrencyByCity\\CurrencyByCity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}
