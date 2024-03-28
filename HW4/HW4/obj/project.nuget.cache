@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6I2xmncgxwqWUZejyTa1Jww68q5krZcyJCk4KybkPcEYfp9vXU7vwDQcC9n0cGjQdwA/zwU69S8GCujNxNMgpw==",
+  "success": true,
+  "projectFilePath": "D:\\Network\\HW4\\HW4\\HW4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
