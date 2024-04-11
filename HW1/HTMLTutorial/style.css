@@ -1,0 +1,27 @@
+h1, h2, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2
+{
+    text-align: center;
+}
+
+code {
+    color: rgb(186, 14, 14);
+    background-color: rgb(232, 232, 232);
+}
+
+.code {
+    background-color: rgb(232, 232, 232);
+}
+
+.tag {
+    background-color: rgb(232, 232, 232);
+    color: darkcyan;
+}
+
+.textCode {
+    color: black
+}
+

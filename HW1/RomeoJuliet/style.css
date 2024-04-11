@@ -1,0 +1,14 @@
+h1 {
+    color: darkblue; 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    color:rgb(145, 145, 145);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+pre, p {
+    font-family: 'Times New Roman', Times, serif;
+}

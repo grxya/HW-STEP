@@ -1,0 +1,13 @@
+.clubs-spades {
+    padding: 2px;
+    font-size: x-large;
+    color: black;
+    background-color: rgb(232, 232, 232);
+    }
+
+    .hearts-diamonds {
+    padding: 2px;
+    font-size: x-large;
+    color: rgb(186, 14, 14);
+    background-color: rgb(232, 232, 232);
+    }
