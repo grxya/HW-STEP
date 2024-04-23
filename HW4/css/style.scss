@@ -36,5 +36,6 @@ main {
 
   .why-us {
     @include bg("../assets/img/WhyUsBackground2.png");
+    display: flex;
   }
 }

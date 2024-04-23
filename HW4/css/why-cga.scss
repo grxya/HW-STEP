@@ -36,16 +36,17 @@
     }
 
     .btn-wrap {
-      margin-top: 20px;
+      margin: 20px 0px;
       height: 30%;
 
       .btn {
-        height: 100%;
         background-color: $logo-dark-green;
         padding: 10px;
+        font-family: "Product Sans";
         font-weight: bolder;
+        font-size: 16px;
         border-radius: 2%;
-        text-decoration: none;
+        border-style: none;
         color: black;
       }
 
