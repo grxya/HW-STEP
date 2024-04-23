@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Product Sans Bold Italic';
+  src: url(../assets/fonts/ProductSansBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Product Sans Bold';
+  src: url(../assets/fonts/ProductSansBold.ttf);
+}
+
+@font-face {
+  font-family: 'Product Sans Italic';
+  src: url(../assets/fonts/ProductSansItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url(../assets/fonts/ProductSansRegular.ttf);
+}
+
+.row2 {
+  font-family: "Product Sans";
+  display: flex;
+  flex-direction: row;
+}
+
+.row2 .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row2 .col h1 {
+  margin: 7px 0px;
+}
+
+.row2 .col p {
+  margin: 10px 0px;
+  color: #636262;
+}
+
+.row2 .col .list {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row2 .col .list .list-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  color: #636262;
+}
+
+.row2 .col .list .list-items .fa-color {
+  color: green;
+  margin: 10px 10px 10px 0px;
+}
+
+.row2 .col .btn-wrap {
+  margin-top: 20px;
+  height: 30%;
+}
+
+.row2 .col .btn-wrap .btn {
+  height: 100%;
+  background-color: #0ca579;
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 2%;
+  text-decoration: none;
+  color: black;
+}
+
+.row2 .col .btn-wrap .btn:hover {
+  color: #6b6b6b;
+}

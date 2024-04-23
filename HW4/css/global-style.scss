@@ -1,0 +1,32 @@
+@import "fonts";
+
+$logo-light-green: #61bf82;
+$logo-dark-green: #0ca579;
+$logo-dark-gray: #6b6b6b;
+$logo-light-gray: #c1c1c1;
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin flex(
+  $justify-content,
+  $align-items,
+  $flex-direction: row,
+  $flex-wrap: nowrap
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+}
+
+@mixin bg($url) {
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

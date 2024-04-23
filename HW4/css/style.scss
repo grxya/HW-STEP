@@ -1,0 +1,40 @@
+@import "animations";
+@import "global-style";
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  height: 800px;
+
+  //// !!!!!!!!! ////
+  padding-top: 75px;
+  //// !!!!!!!!! ////
+
+  .greeting {
+    @include bg("../assets/img/IntroBackground.png");
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    .car-bg {
+      display: flex;
+      justify-content: flex-end;
+      height: 50%;
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 700px;
+      }
+    }
+  }
+
+  .why-us {
+    @include bg("../assets/img/WhyUsBackground2.png");
+  }
+}
