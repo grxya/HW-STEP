@@ -1,0 +1,19 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 20px;
+}
+
+.example {
+    color: gray;
+}
+
+.synonyms {
+    color: blueviolet;
+}
+
+span {
+    color: black;
+}

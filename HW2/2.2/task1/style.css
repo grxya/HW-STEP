@@ -1,0 +1,26 @@
+.list {
+    margin: 10px;
+    padding: 10px;
+    font-size: larger;
+    list-style-type: none;
+    color: white;
+    background-color: rgba(189, 8, 80, 0.497);
+}
+
+.list-item {
+    margin: 20px;
+    padding: 10px;
+    counter-increment: counter;
+    background-color: rgba(189, 8, 80, 0.519);
+}
+
+.list-item::before {
+    margin: 5px;
+    content: counter(counter) '.';
+}
+
+.list-text {
+    padding: 10px 20px;
+    background-color: rgb(189, 8, 81);
+}
+

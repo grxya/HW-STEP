@@ -1,0 +1,51 @@
+body {
+  margin: 20px;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.list-item-even {
+  padding: 10px;
+  background-color: rgb(145, 202, 228);
+  align-items: center;
+}
+
+.list-item-odd {
+  padding: 10px;
+  background-color: rgb(124, 177, 202);
+  align-items: center;
+}
+
+.list-item-done {
+  padding: 10px;
+  background-color: rgba(198, 198, 198, 0.77);
+  align-items: center;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.list-item-even::before,
+.list-item-odd::before {
+  content: url(icons/unchecked.png);
+  margin: 20px;
+}
+
+.list-item-done::before {
+  content: url(icons/checked.png);
+  margin: 20px;
+}
+
+.cross {
+  content: "\2716";
+  margin: 20px;
+  font-size: 10px;
+  color: rgb(191, 31, 31);
+  font-size: medium;
+}
