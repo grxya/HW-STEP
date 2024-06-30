@@ -14,7 +14,7 @@ export default function Login() {
   const loginByAxios = async (e) => {
     e.preventDefault();
 
-    const userName = emailRef.current.value;
+    const username = emailRef.current.value;
     const password = passwordRef.current.value;
 
     try {
@@ -22,7 +22,7 @@ export default function Login() {
         "https://dummyjson.com/auth/login",
 
         {
-          userName,
+          username,
           password,
         },
         {
@@ -47,7 +47,7 @@ export default function Login() {
 
   useEffect(() => {
     if (userData.state !== null) {
-      emailRef.current.value = userData.state.userName;
+      emailRef.current.value = userData.state.username;
     }
   });
 
