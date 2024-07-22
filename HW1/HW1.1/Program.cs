@@ -63,9 +63,10 @@ app.MapPut("/edittask", async (TaskManagementDbContext db, Task edited) =>
         return Results.NotFound();
     }
 
-    task.Name = edited.Name;
-    task.Description = edited.Description;
-    task.Deadline = edited.Deadline;
+    task.Name = edited.Name ?? task.Name;
+    task.Description = edited.Description ?? task.Description;
+    Console.WriteLine(edited.Deadline.ToShortDateString());
+    task.Deadline = edited.Deadline.ToShortDateString() != "01.01.0001" ? edited.Deadline : task.Deadline;
 
     await db.SaveChangesAsync();
     return Results.Ok(task);
