@@ -11,5 +11,5 @@ public partial class Task
 
     public string Description { get; set; }
 
-    public DateOnly Deadline { get; set; }
+    public DateTime Deadline { get; set; }
 }
