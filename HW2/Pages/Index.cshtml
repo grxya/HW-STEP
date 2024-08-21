@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center d-flex flex-row w-100 my-5">
+    <div class="d-flex flex-column w-50 mr-5">
+        <div class="d-flex flex-column">
+            <h1 class="home-text">Hello, It's <span class="text-custom">Gariba</span></h1>
+            <h3 class="home-text">I'm a <span class="text-custom">Software Developer</span></h3>
+            <p class="home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat nibh sit amet ante congue porta. Curabitur vitae sapien sed diam facilisis luctus id ut magna. Quisque tempus lectus vel cursus aliquet. Sed et sodales diam. Mauris aliquet porttitor turpis ac finibus. Phasellus ante tellus, blandit ac mattis et, efficitur in nibh. </p>
+        </div>
+        <div class="d-flex flex-row mt-3">
+            <a class="btn btn-outline-primary rounded-pill mx-1" asp-page-handler="DownloadFile">
+                <span>Download CV</span> 
+                <i class="fa-solid fa-download"></i>
+            </a>
+            <a class="btn btn-outline-primary rounded-circle icon-wrap mx-1" href="https://github.com/grxya">
+                <svg class="h-100 w-100" xmlns="http://www.w3.org/2000/svg"
+                     width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000"
+                     preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                        Created by potrace 1.10, written by Peter Selinger 2001-2011
+                    </metadata>
+                    <g transform="translate(0.000000,300.000000) scale(0.050000,-0.050000)" 
+                       fill="#99004C" stroke="none">
+                        <path d="M2600 5781 c-599 -78 -1243 -412 -1672 -866 -1335 -1416 -931 -3679
+                        813 -4556 479 -241 539 -212 539 262 l0 235 -285 8 c-431 11 -515 59 -709 408
+                        -67 122 -143 221 -254 331 -87 86 -155 160 -150 164 140 123 334 41 583 -245
+                        225 -258 323 -311 550 -298 211 12 263 41 306 168 19 56 58 139 87 184 l52 83
+                        -55 12 c-408 88 -607 165 -798 310 -439 331 -568 1245 -246 1740 95 145 97
+                        153 76 230 -35 125 -11 511 36 593 72 123 325 76 666 -124 l144 -84 168 34
+                        c230 45 894 46 1113 1 l153 -32 187 99 c350 186 590 234 634 127 60 -149 78
+                        -408 40 -584 -19 -91 -17 -108 20 -166 182 -283 251 -536 235 -855 -36 -719
+                        -402 -1134 -1109 -1261 -181 -32 -177 -24 -83 -186 l78 -135 6 -553 5 -553 66
+                        -38 c187 -109 995 378 1372 826 1703 2026 52 5062 -2568 4721z"/>
+                    </g>
+                </svg>
+            </a>
+            <a class="btn btn-outline-primary rounded-circle icon-wrap mx-1" href="https://www.linkedin.com/in/gariba-dadashova-99419a290">
+                <svg class="h-100 w-100"  xmlns="http://www.w3.org/2000/svg"
+                     width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000"
+                     preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                        Created by potrace 1.10, written by Peter Selinger 2001-2011
+                    </metadata>
+                    <g transform="translate(0.000000,300.000000) scale(0.050000,-0.050000)"
+                       fill="#99004C" stroke="none">
+                        <path d="M1040 5263 c-615 -202 -485 -1105 158 -1103 585 2 775 797 255 1064
+                        -90 46 -324 68 -413 39z"/>
+                        <path d="M3910 3709 c-217 -48 -447 -171 -620 -333 l-150 -140 0 222 0 222
+                        -450 0 -450 0 0 -1590 0 -1590 480 0 480 0 0 888 c0 996 5 1041 149 1235 239
+                        324 840 282 1028 -73 l53 -100 6 -975 5 -975 491 0 490 0 -6 1115 -6 1115 -56
+                        160 c-225 640 -793 962 -1444 819z"/>
+                        <path d="M700 2090 l0 -1590 500 0 500 0 -5 1585 -5 1585 -495 5 -495 6 0
+                        -1591z"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        
+    </div>
+        <div class="d-flex flex-column rounded-circle profile-wrap mx-5">
+            <img class="h-100 w-100" src="favicon.ico" alt="icon"/>
+        </div>
+</div>
