@@ -1,0 +1,14 @@
+D:\System\HW2\NumPairs\bin\Debug\net8.0\NumPairs.exe
+D:\System\HW2\NumPairs\bin\Debug\net8.0\NumPairs.deps.json
+D:\System\HW2\NumPairs\bin\Debug\net8.0\NumPairs.runtimeconfig.json
+D:\System\HW2\NumPairs\bin\Debug\net8.0\NumPairs.dll
+D:\System\HW2\NumPairs\bin\Debug\net8.0\NumPairs.pdb
+D:\System\HW2\NumPairs\obj\Debug\net8.0\NumPairs.GeneratedMSBuildEditorConfig.editorconfig
+D:\System\HW2\NumPairs\obj\Debug\net8.0\NumPairs.AssemblyInfoInputs.cache
+D:\System\HW2\NumPairs\obj\Debug\net8.0\NumPairs.AssemblyInfo.cs
+D:\System\HW2\NumPairs\obj\Debug\net8.0\NumPairs.csproj.CoreCompileInputs.cache
+D:\System\HW2\NumPairs\obj\Debug\net8.0\NumPairs.dll
+D:\System\HW2\NumPairs\obj\Debug\net8.0\refint\NumPairs.dll
+D:\System\HW2\NumPairs\obj\Debug\net8.0\NumPairs.pdb
+D:\System\HW2\NumPairs\obj\Debug\net8.0\NumPairs.genruntimeconfig.cache
+D:\System\HW2\NumPairs\obj\Debug\net8.0\ref\NumPairs.dll
