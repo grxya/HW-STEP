@@ -1,0 +1,14 @@
+D:\System\HW1\AutoResetEvent\bin\Debug\net8.0\AutoResetEvent.exe
+D:\System\HW1\AutoResetEvent\bin\Debug\net8.0\AutoResetEvent.deps.json
+D:\System\HW1\AutoResetEvent\bin\Debug\net8.0\AutoResetEvent.runtimeconfig.json
+D:\System\HW1\AutoResetEvent\bin\Debug\net8.0\AutoResetEvent.dll
+D:\System\HW1\AutoResetEvent\bin\Debug\net8.0\AutoResetEvent.pdb
+D:\System\HW1\AutoResetEvent\obj\Debug\net8.0\AutoResetEvent.GeneratedMSBuildEditorConfig.editorconfig
+D:\System\HW1\AutoResetEvent\obj\Debug\net8.0\AutoResetEvent.AssemblyInfoInputs.cache
+D:\System\HW1\AutoResetEvent\obj\Debug\net8.0\AutoResetEvent.AssemblyInfo.cs
+D:\System\HW1\AutoResetEvent\obj\Debug\net8.0\AutoResetEvent.csproj.CoreCompileInputs.cache
+D:\System\HW1\AutoResetEvent\obj\Debug\net8.0\AutoResetEvent.dll
+D:\System\HW1\AutoResetEvent\obj\Debug\net8.0\refint\AutoResetEvent.dll
+D:\System\HW1\AutoResetEvent\obj\Debug\net8.0\AutoResetEvent.pdb
+D:\System\HW1\AutoResetEvent\obj\Debug\net8.0\AutoResetEvent.genruntimeconfig.cache
+D:\System\HW1\AutoResetEvent\obj\Debug\net8.0\ref\AutoResetEvent.dll
