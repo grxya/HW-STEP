@@ -1,0 +1,14 @@
+D:\System\HW2\BusStop\bin\Debug\net8.0\BusStop.exe
+D:\System\HW2\BusStop\bin\Debug\net8.0\BusStop.deps.json
+D:\System\HW2\BusStop\bin\Debug\net8.0\BusStop.runtimeconfig.json
+D:\System\HW2\BusStop\bin\Debug\net8.0\BusStop.dll
+D:\System\HW2\BusStop\bin\Debug\net8.0\BusStop.pdb
+D:\System\HW2\BusStop\obj\Debug\net8.0\BusStop.GeneratedMSBuildEditorConfig.editorconfig
+D:\System\HW2\BusStop\obj\Debug\net8.0\BusStop.AssemblyInfoInputs.cache
+D:\System\HW2\BusStop\obj\Debug\net8.0\BusStop.AssemblyInfo.cs
+D:\System\HW2\BusStop\obj\Debug\net8.0\BusStop.csproj.CoreCompileInputs.cache
+D:\System\HW2\BusStop\obj\Debug\net8.0\BusStop.dll
+D:\System\HW2\BusStop\obj\Debug\net8.0\refint\BusStop.dll
+D:\System\HW2\BusStop\obj\Debug\net8.0\BusStop.pdb
+D:\System\HW2\BusStop\obj\Debug\net8.0\BusStop.genruntimeconfig.cache
+D:\System\HW2\BusStop\obj\Debug\net8.0\ref\BusStop.dll

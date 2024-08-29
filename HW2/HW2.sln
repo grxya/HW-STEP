@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumPairs", "NumPairs\NumPairs.csproj", "{17E4ADCB-F6B9-41DC-B528-C6745C6E21CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusStop", "BusStop\BusStop.csproj", "{7026D697-C22E-4D38-8A9C-A36D1A9F19CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{17E4ADCB-F6B9-41DC-B528-C6745C6E21CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17E4ADCB-F6B9-41DC-B528-C6745C6E21CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17E4ADCB-F6B9-41DC-B528-C6745C6E21CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7026D697-C22E-4D38-8A9C-A36D1A9F19CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7026D697-C22E-4D38-8A9C-A36D1A9F19CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7026D697-C22E-4D38-8A9C-A36D1A9F19CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7026D697-C22E-4D38-8A9C-A36D1A9F19CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
