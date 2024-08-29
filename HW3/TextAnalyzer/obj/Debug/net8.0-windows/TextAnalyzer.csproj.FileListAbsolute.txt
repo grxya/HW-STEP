@@ -1,0 +1,16 @@
+D:\System\HW3\TextAnalyzer\bin\Debug\net8.0-windows\TextAnalyzer.exe
+D:\System\HW3\TextAnalyzer\bin\Debug\net8.0-windows\TextAnalyzer.deps.json
+D:\System\HW3\TextAnalyzer\bin\Debug\net8.0-windows\TextAnalyzer.runtimeconfig.json
+D:\System\HW3\TextAnalyzer\bin\Debug\net8.0-windows\TextAnalyzer.dll
+D:\System\HW3\TextAnalyzer\bin\Debug\net8.0-windows\TextAnalyzer.pdb
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\TextAnalyzer.MainForm.resources
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\TextAnalyzer.csproj.GenerateResource.cache
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\TextAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\TextAnalyzer.AssemblyInfoInputs.cache
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\TextAnalyzer.AssemblyInfo.cs
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\TextAnalyzer.csproj.CoreCompileInputs.cache
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\TextAnalyzer.dll
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\refint\TextAnalyzer.dll
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\TextAnalyzer.pdb
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\TextAnalyzer.genruntimeconfig.cache
+D:\System\HW3\TextAnalyzer\obj\Debug\net8.0-windows\ref\TextAnalyzer.dll
