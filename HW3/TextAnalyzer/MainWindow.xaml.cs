@@ -27,7 +27,7 @@ namespace TextAnalyzer
 
             using StreamWriter sw = new(new FileStream("report.txt", FileMode.OpenOrCreate));
 
-            sw.WriteAsync(result);
+            await sw.WriteAsync(result);
         }
 
         private async void ShowButton_Click(object sender, RoutedEventArgs e)
