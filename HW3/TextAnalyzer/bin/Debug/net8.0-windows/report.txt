@@ -1,0 +1,6 @@
+The number of sentences: 1
+The number of symbols: 4
+The number of words: 1
+The number of exclamatory sentences: 0
+The number of questions: 1
+
