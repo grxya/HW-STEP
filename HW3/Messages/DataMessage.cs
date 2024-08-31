@@ -5,10 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW3.Messages
+namespace HW3.Messages;
+class DataMessage
 {
-    internal class DataMessage
-    {
-        public IData Data { get; set; }
-    }
+    public IData Data { get; set; }
 }

@@ -20,13 +20,13 @@ namespace HW3
         {
             Container = new();
 
-/*            Container.RegisterSingleton<IDownloadService, DownloadService>();
-            Container.RegisterSingleton<IJsonService, JsonService>();
-            Container.RegisterSingleton<IBookManagerService, BookManagerService>();*/
+            Container.RegisterSingleton<ISearchService, SearchService>();
 
             Container.RegisterSingleton<IMessenger, Messenger>();
             Container.RegisterSingleton<INavigationService, NavigationService>();
             Container.RegisterSingleton<IDataService, DataService>();
+            Container.RegisterSingleton<IDownloadService, DownloadService>();
+
 
             Container.RegisterSingleton<MainViewModel>();
             Container.RegisterSingleton<SearchViewModel>();
@@ -35,7 +35,6 @@ namespace HW3
 
             Container.Verify();
         }
-
         protected override void OnStartup(StartupEventArgs e)
         {
             Register();

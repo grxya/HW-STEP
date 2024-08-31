@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW3.Services.Interfaces
+namespace HW3.Services.Interfaces;
+
+internal interface IDataService
 {
-    internal interface IDataService
-    {
-        public void SendData<T>(T data) where T : IData;
-    }
+    public void SendData<T>(T data) where T : IData;
 }

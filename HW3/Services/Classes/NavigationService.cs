@@ -8,23 +8,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW3.Services.Classes
+namespace HW3.Services.Classes;
+
+public class NavigationService : INavigationService
 {
-    public class NavigationService : INavigationService
+    private readonly IMessenger _messenger;
+
+    public NavigationService(IMessenger messenger)
     {
-        private readonly IMessenger _messenger;
+        _messenger = messenger;
+    }
 
-        public NavigationService(IMessenger messenger)
+    public void NavigateTo<T>() where T : ViewModelBase
+    {
+        _messenger.Send(new NavigationMessage()
         {
-            _messenger = messenger;
-        }
-
-        public void NavigateTo<T>() where T : ViewModelBase
-        {
-            _messenger.Send(new NavigationMessage()
-            {
-                ViewModelType = App.Container.GetInstance<T>()
-            });
-        }
+            ViewModelType = App.Container.GetInstance<T>()
+        });
     }
 }

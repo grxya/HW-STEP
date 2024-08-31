@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW3.Models
+namespace HW3.Models;
+
+interface IData
 {
-    internal interface IData
-    {
-    }
+
 }

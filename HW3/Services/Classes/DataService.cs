@@ -8,23 +8,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW3.Services.Classes
+namespace HW3.Services.Classes;
+
+class DataService : IDataService
 {
-    class DataService : IDataService
+    private readonly IMessenger _messenger;
+
+    public DataService(IMessenger messenger)
     {
-        private readonly IMessenger _messenger;
+        _messenger = messenger;
+    }
 
-        public DataService(IMessenger messenger)
-        {
-            _messenger = messenger;
-        }
-
-        public void SendData<T>(T? data) where T : IData
-        {
-            if (data != null)
-                _messenger.Send(new DataMessage() { Data = data });
-            else
-                throw new NullReferenceException("Data is null");
-        }
+    public void SendData<T>(T? data) where T : IData
+    {
+        if (data != null)
+            _messenger.Send(new DataMessage() { Data = data });
+        else
+            throw new NullReferenceException("Data is null");
     }
 }

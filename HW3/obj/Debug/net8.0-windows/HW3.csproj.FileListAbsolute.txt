@@ -33,3 +33,4 @@ D:\Network\HW3\obj\Debug\net8.0-windows\Views\ResultsView.baml
 D:\Network\HW3\obj\Debug\net8.0-windows\HW3.csproj.CopyComplete
 D:\Network\HW3\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\Network\HW3\obj\Debug\net8.0-windows\App.baml
+D:\Network\HW3\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
